@@ -10,7 +10,7 @@ public class App
     {
         System.out.println( "Hello World!" );
         Animal animal = new Cat("Dexter");
-        animal.setAge(2);
+        animal.setAge(3);
         animal.setFavActivity("running");
         animal.setFavFood("meat");
         animal.setHealth(10);
@@ -18,6 +18,15 @@ public class App
         animal.setSpirit(10);
 
         Petfood petfood = new Petfood();
+        petfood.setexpirationDate();
+        petfood.setname("Whiskas");
+        petfood.setprice(2.5);
+        petfood.setquantity (1.2);
+        petfood.setoriginCountry("Germany");
+        petfood.setdailyPortion(1.2);
+        petfood.setingredients ("a,b,c");
+        petfood.setbioFood(true);
+
         Rescuer rescuer = new Rescuer();
         rescuer.feedAnimal(animal, petfood);
 
@@ -25,3 +34,4 @@ public class App
         System.out.println(animal.getName());
     }
 }
+
