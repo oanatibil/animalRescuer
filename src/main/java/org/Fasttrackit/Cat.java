@@ -1,9 +1,9 @@
 package org.Fasttrackit;
 
 public class Cat extends Animal {
-String breed;
-boolean hunter;
-boolean indoor;
+private String breed;
+private boolean hunter;
+private boolean indoor;
 
     public Cat(String name) {
         super(name);
@@ -11,7 +11,7 @@ boolean indoor;
     }
 
     public void showAnimalSpirit (){
-        if (spirit>5) {
+        if (this.spirit>5) {
             System.out.println(this.name + "purrs because it is happy :)");
         }
         else {
@@ -22,6 +22,7 @@ boolean indoor;
 
     public String getBreed() {
         return breed;
+
     }
 
     public void setBreed(String breed) {
@@ -43,4 +44,6 @@ boolean indoor;
     public void setIndoor(boolean indoor) {
         this.indoor = indoor;
     }
+
+
 }

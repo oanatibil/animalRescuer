@@ -48,10 +48,22 @@ public class App
         rescuer.setMoney(100.5);
 
         rescuer.feedAnimal(animal, petfood);
+
         Recreation recreation  = new Recreation();
+        recreation.setDuration(10);
+        recreation.setGroupActvity(true);
+        recreation.setName("jogging");
+        recreation.setPlace("park");
+        recreation.setRecreationDate(10);
         rescuer.recreateAnimal(rescuer, recreation, animal);
 
-
+Vet vet = new Vet();
+vet.setAge(45);
+vet.setExperience(20);
+vet.setGender("M");
+vet.setHomeDistance(12);
+vet.setName("Arthur");
+vet.setSpecialty("fhl");
 
         System.out.println("");
         System.out.println(animal.getName());
@@ -61,12 +73,12 @@ public class App
 
         Animal cat = new Cat("Dexter");
         cat.setSpirit(4);
+
         Animal dog = new Dog("Cora");
         dog.setSpirit(9);
 
         cat.showAnimalSpirit();
         dog.showAnimalSpirit();
-
 
     }
     public static void createCat() {
@@ -82,7 +94,7 @@ public class App
 
     public static void createDog() {
         System.out.println( "Hello World!" );
-        Animal animal = new Cat("Cora");
+        Animal animal = new Dog("Cora");
         animal.setAge(3);
         animal.setFavActivity("running");
         animal.setFavFood("meat");

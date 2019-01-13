@@ -5,7 +5,7 @@ public class Recreation {
     private int duration;
     private boolean groupActvity;
     private String place;
-    private long recreationDate;
+    private double recreationDuration;
 
     public String getName() {
         return name;
@@ -39,11 +39,11 @@ public class Recreation {
         this.place = place;
     }
 
-    public long getRecreationDate() {
-        return recreationDate;
+    public double getRecreationDuration() {
+        return recreationDuration;
     }
 
     public void setRecreationDate(long recreationDate) {
-        this.recreationDate = recreationDate;
+        this.recreationDuration = recreationDuration;
     }
 }

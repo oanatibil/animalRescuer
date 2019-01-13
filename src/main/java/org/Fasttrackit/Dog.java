@@ -1,7 +1,7 @@
 package org.Fasttrackit;
 
 public class Dog extends Animal {
-    boolean trained;
+    private boolean trained;
 
     public Dog(String name) {
         super(name);
@@ -24,4 +24,6 @@ public class Dog extends Animal {
     public void setTrained(boolean trained) {
         this.trained = trained;
     }
+
+
 }
