@@ -23,7 +23,11 @@ private boolean bioFood;
 
     }
 
-    public void setprice( double price) {
+    public String getName() {
+        return name;
+    }
+
+    public void setprice(double price) {
         this.price = price;
         System.out.println( price + "RON");
     }
