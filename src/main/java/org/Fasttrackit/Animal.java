@@ -1,10 +1,24 @@
 package org.Fasttrackit;
 
 public class Animal {
-    private String name;
+    protected String name;
     private int age;
     private int health;
+    private int hunger;
+    protected int spirit;
+    private String favFood;
+    private String favActivity;
 
+    public Animal(String name) {
+        this.name = name;
+        System.out.println("in animal constructor " + name);
+    }
+
+    public void showAnimalSpirit ( ){
+
+        System.out.println(" From 0 to 10 the animal has the following state of mind:" + this.spirit );
+
+    }
     public int getHunger() {
         return hunger;
     }
@@ -37,15 +51,7 @@ public class Animal {
         this.favActivity = favActivity;
     }
 
-    private int hunger;
-    private int spirit;
-    private String favFood;
-    private String favActivity;
 
-    public Animal(String name) {
-        this.name = name;
-        System.out.println("in animal constructor " + name);
-    }
 
     public String getName() {
         return name;
@@ -70,5 +76,6 @@ public class Animal {
     public void setHealth(int health) {
         this.health = health;
     }
+
 
 }

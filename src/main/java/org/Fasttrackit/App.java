@@ -11,6 +11,9 @@ public class App
 
         App.rescuerFeedAnimal();
 
+        //Homework 5 (overriding)
+        App.showAnimalSpirit();
+
 
 
     }
@@ -53,5 +56,40 @@ public class App
         System.out.println("");
         System.out.println(animal.getName());
     }
+
+    public static void showAnimalSpirit () {
+
+        Animal cat = new Cat("Dexter");
+        cat.setSpirit(4);
+        Animal dog = new Dog("Cora");
+        dog.setSpirit(9);
+
+        cat.showAnimalSpirit();
+        dog.showAnimalSpirit();
+
+
+    }
+    public static void createCat() {
+        System.out.println( "Hello World!" );
+        Animal animal = new Cat("Dexter");
+        animal.setAge(3);
+        animal.setFavActivity("running");
+        animal.setFavFood("meat");
+        animal.setHealth(10);
+        animal.setHunger(1);
+        animal.setSpirit(10);
+    }
+
+    public static void createDog() {
+        System.out.println( "Hello World!" );
+        Animal animal = new Cat("Cora");
+        animal.setAge(3);
+        animal.setFavActivity("running");
+        animal.setFavFood("meat");
+        animal.setHealth(10);
+        animal.setHunger(1);
+        animal.setSpirit(10);
+    }
+
 }
 
